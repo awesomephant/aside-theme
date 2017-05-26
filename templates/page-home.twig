@@ -1,0 +1,14 @@
+{% extends "base.twig" %}
+{% block content %}
+    <div class="home-images">
+      <img src="{{ theme.link }}/assets/source/h.jpg" alt="test">
+      <img src="{{ theme.link }}/assets/source/b.jpg" alt="test">
+      <img src="{{ theme.link }}/assets/source/j.jpg" alt="test">
+      <img src="{{ theme.link }}/assets/source/d.jpg" alt="test">
+      <img src="{{ theme.link }}/assets/source/i.jpg" alt="test">
+      <img src="{{ theme.link }}/assets/source/c.jpg" alt="test">
+    </div>
+    <script>
+    {% include "./js/arrange-images.js" %}
+    </script>
+{% endblock %}

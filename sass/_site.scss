@@ -1,0 +1,16 @@
+body {
+    background: $pink;
+}
+
+.site-header {
+    position: fixed;
+    z-index: 100;
+    padding: 1rem;
+    text-align: center;
+}
+.site-title {
+    font-family: $larish;
+    color: $black;
+    font-size: 2rem;
+    letter-spacing: .01em;
+}

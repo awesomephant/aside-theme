@@ -1,0 +1,8 @@
+ @font-face {
+      font-family: "Larish";
+      src: url("./fonts/larish_neue.otf") format("opentype");
+}
+
+$larish: Larish, Georgia, 'Times New Roman', serif;
+$pink: #FFC6B6;
+$black: rgb(42,40,45) 

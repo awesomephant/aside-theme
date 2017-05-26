@@ -1,0 +1,9 @@
+.home-images {
+    padding: 1rem;
+    img {
+        z-index: -100;
+        display: block;
+        position: relative;
+        max-width: 100%;
+    }
+}
