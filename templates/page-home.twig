@@ -10,11 +10,13 @@
     </div>
     <section class="menu">
       <ul class="menu-items">
+	  {% for i in 0..20 %}
         <li class="menu-item">
 			<h2 class="menu-item-title">A Food</h2>
+			<span class="menu-item-price">{{random(10)}}</span>
 			<p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			<span class="menu-item-price">3.5</span>
 		</li>
+		{% endfor %}
       </ul>
     </section>
     <script>

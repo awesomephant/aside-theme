@@ -4,25 +4,22 @@
 
 body {
   background: #FFC6B6;
-  font-family: Larish, Georgia, "Times New Roman", serif; }
+  font-family: Larish, Georgia, "Times New Roman", serif;
+  padding: 3%; }
 
 .site-header {
   position: fixed;
-  z-index: 100;
+  z-index: -100;
   width: 100%;
-  padding: 1rem;
-  transform: translateY(50%);
-  text-align: center; }
+  padding-top: 1rem;
+  text-align: left; }
 
 .site-title {
   color: white;
-  font-size: 10vw;
+  font-size: 6vw;
   letter-spacing: .01em; }
 
 .site-footer {
-  position: absolute;
-  bottom: 0;
-  padding: 1rem;
   font-size: 1.4rem;
   display: flex;
   flex-direction: column;
@@ -50,16 +47,33 @@ body {
     position: relative;
     max-width: 100%; }
 
+.menu-items {
+  display: grid;
+  margin-bottom: 4rem; }
+  @media (min-width: 45rem) {
+    .menu-items {
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 3%; } }
+
 .menu-item {
+  padding: .5rem 0;
+  font-size: 1.2rem;
+  border-bottom: 1px solid rgba(42, 40, 45, 0.4);
   display: flex;
-  border-bottom: 1px solid rgba(42, 40, 45, 0.5); }
+  flex-wrap: wrap;
+  justify-content: space-between;
+  grid-column-start: auto;
+  grid-column-end: span 1; }
+
+.menu-item-description {
+  flex-basis: 100%; }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-size: 100%;
-  font-size: 100; }
+  font-weight: 100; }
 
 a {
   color: #2a282d;

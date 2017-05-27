@@ -1,26 +1,23 @@
 body {
     background: $pink;
     font-family: $larish;
+    padding: 3%;
 }
 
 .site-header {
     position: fixed;
-    z-index: 100;
+    z-index: -100;
     width: 100%;
-    padding: 1rem;
-    transform: translateY(50%);
-    text-align: center;
+    padding-top: 1rem;
+    text-align: left;
 }
 .site-title {
     color: white;
-    font-size: 10vw;
+    font-size: 6vw;
     letter-spacing: .01em;
 }
 
 .site-footer {
-    position: absolute;
-    bottom: 0;
-    padding: 1rem;
     font-size: 1.4rem;
     display: flex;
     flex-direction: column;

@@ -1,5 +1,24 @@
-.menu {}
+.menu-items {
+    display: grid;
+    margin-bottom: 4rem;
+    @include bp(m){
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 3%;
+    }
+}
 .menu-item {
+    padding: .5rem 0;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba($black, .4);
     display: flex;
-    border-bottom: 1px solid rgba($black, .5);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-column-start: auto;
+    grid-column-end: span 1;
+}
+
+.menu-item-description {
+    flex-basis: 100%;
+}
+.menu-item-price {
 }
