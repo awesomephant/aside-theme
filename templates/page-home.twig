@@ -1,13 +1,22 @@
 {% extends "base.twig" %}
 {% block content %}
     <div class="home-images">
-      <img src="{{ theme.link }}/assets/source/h.jpg" alt="test">
+      {#<img src="{{ theme.link }}/assets/source/h.jpg" alt="test">
       <img src="{{ theme.link }}/assets/source/b.jpg" alt="test">
       <img src="{{ theme.link }}/assets/source/j.jpg" alt="test">
       <img src="{{ theme.link }}/assets/source/d.jpg" alt="test">
       <img src="{{ theme.link }}/assets/source/i.jpg" alt="test">
-      <img src="{{ theme.link }}/assets/source/c.jpg" alt="test">
+      <img src="{{ theme.link }}/assets/source/c.jpg" alt="test">#}
     </div>
+    <section class="menu">
+      <ul class="menu-items">
+        <li class="menu-item">
+			<h2 class="menu-item-title">A Food</h2>
+			<p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			<span class="menu-item-price">3.5</span>
+		</li>
+      </ul>
+    </section>
     <script>
     {% include "./js/arrange-images.js" %}
     </script>

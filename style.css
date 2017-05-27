@@ -3,19 +3,44 @@
   src: url("./fonts/larish_neue.otf") format("opentype"); }
 
 body {
-  background: #FFC6B6; }
+  background: #FFC6B6;
+  font-family: Larish, Georgia, "Times New Roman", serif; }
 
 .site-header {
   position: fixed;
   z-index: 100;
+  width: 100%;
   padding: 1rem;
+  transform: translateY(50%);
   text-align: center; }
 
 .site-title {
-  font-family: Larish, Georgia, "Times New Roman", serif;
-  color: #2a282d;
-  font-size: 2rem;
+  color: white;
+  font-size: 10vw;
   letter-spacing: .01em; }
+
+.site-footer {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start; }
+  @media (min-width: 45rem) {
+    .site-footer {
+      flex-direction: row; } }
+  @media (min-width: 45rem) {
+    .site-footer p {
+      padding-right: 2rem; } }
+  .site-footer span {
+    display: block; }
+
+.site-copyright {
+  margin-top: 2rem;
+  flex-basis: 100%;
+  display: block; }
 
 .home-images {
   padding: 1rem; }
@@ -25,10 +50,28 @@ body {
     position: relative;
     max-width: 100%; }
 
+.menu-item {
+  display: flex;
+  border-bottom: 1px solid rgba(42, 40, 45, 0.5); }
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: 100%; }
+  font-size: 100%;
+  font-size: 100; }
+
+a {
+  color: #2a282d;
+  text-decoration: none;
+  position: relative; }
+  a:after {
+    content: '';
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    background: rgba(42, 40, 45, 0.5); }
 
 /*# sourceMappingURL=true */

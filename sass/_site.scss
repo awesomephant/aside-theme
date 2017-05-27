@@ -1,16 +1,48 @@
 body {
     background: $pink;
+    font-family: $larish;
 }
 
 .site-header {
     position: fixed;
     z-index: 100;
+    width: 100%;
     padding: 1rem;
+    transform: translateY(50%);
     text-align: center;
 }
 .site-title {
-    font-family: $larish;
-    color: $black;
-    font-size: 2rem;
+    color: white;
+    font-size: 10vw;
     letter-spacing: .01em;
+}
+
+.site-footer {
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    @include bp(m){
+        flex-direction: row;
+    }
+
+    p {
+        @include bp(m){
+            padding-right: 2rem;
+        }
+    }
+
+    span {
+        display: block;
+    }
+}
+
+.site-copyright {
+    margin-top: 2rem;
+    flex-basis: 100%;
+    display: block;
 }

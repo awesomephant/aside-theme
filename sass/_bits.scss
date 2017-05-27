@@ -5,4 +5,16 @@
 
 $larish: Larish, Georgia, 'Times New Roman', serif;
 $pink: #FFC6B6;
-$black: rgb(42,40,45) 
+$black: rgb(42,40,45);
+
+@mixin bp($point) {
+  @if $point == l {
+    @media (min-width: 65rem) { @content; }
+  }
+  @else if $point == m {
+    @media (min-width: 45rem) { @content; }
+  }
+  @else if $point == s {
+    @media (min-width: 35rem)  { @content; }
+  }
+}
