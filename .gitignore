@@ -4,3 +4,4 @@ wp-content
 node_modules/
 *.lock
 true
+asses/source/
