@@ -1,24 +1,26 @@
 {% extends "base.twig" %}
 {% block content %}
     <div class="home-images">
-      {#<img src="{{ theme.link }}/assets/source/h.jpg" alt="test">
-      <img src="{{ theme.link }}/assets/source/b.jpg" alt="test">
-      <img src="{{ theme.link }}/assets/source/j.jpg" alt="test">
-      <img src="{{ theme.link }}/assets/source/d.jpg" alt="test">
-      <img src="{{ theme.link }}/assets/source/i.jpg" alt="test">
-      <img src="{{ theme.link }}/assets/source/c.jpg" alt="test">#}
+      <h1 class='home-title'>
+      <span>Aside</span>
+      <span>A Place to Gather</span>
+      </h1>
+      <img src="{{ theme.link }}/assets/source/wall-2.jpg" alt="test">
+      <img src="{{ theme.link }}/assets/source/SIP-4817.jpg" alt="test">
+      <img src="{{ theme.link }}/assets/source/SIP-4806.jpg" alt="test">
+      <img src="{{ theme.link }}/assets/source/marble.jpg" alt="test">
+      <div class='home-info'>
+      <p>
+        <span>49 Staffordshire Street</span>
+        <span>London SE15 5TJ</span>
+        </p>
+        <p class='contact'>
+        <span><a href="http://www.instagram.com/asidelondon">@asidelondon</a></span>
+        <span>hello@asidelondon.com</span>
+        <span>44 1542 373839</span>
+        </p>
     </div>
-    <section class="menu">
-      <ul class="menu-items">
-	  {% for i in 0..20 %}
-        <li class="menu-item">
-			<h2 class="menu-item-title">A Food</h2>
-			<span class="menu-item-price">{{random(10)}}</span>
-			<p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		</li>
-		{% endfor %}
-      </ul>
-    </section>
+    </div>
     <script>
     {% include "./js/arrange-images.js" %}
     </script>

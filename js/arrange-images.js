@@ -6,7 +6,8 @@ var images = document.querySelectorAll('.home-images img');
 
 for (var i = 0; i < images.length; i++) {
     let image = images[i];
-    image.style.width = getRandomInt(40, 100) + 'vw';
-    image.style.left = getRandomInt(-4, 4) * 5 + 'vw';
-    image.style.top = getRandomInt(-20, 20) + 'vh';
+    let w = getRandomInt(25, 40);
+    image.style.width = w + '%';
+    image.style.left = getRandomInt(-10, (100 - w)) + '%';
+    image.style.top = getRandomInt(-20, 20) + '%';
 }

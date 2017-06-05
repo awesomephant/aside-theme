@@ -3,9 +3,8 @@
   src: url("./fonts/larish_neue.otf") format("opentype"); }
 
 body {
-  background: #FFC6B6;
-  font-family: Larish, Georgia, "Times New Roman", serif;
-  padding: 3%; }
+  background: #ffd0d1;
+  font-family: Larish, Georgia, "Times New Roman", serif; }
 
 .site-header {
   position: fixed;
@@ -40,25 +39,48 @@ body {
   display: block; }
 
 .home-images {
-  padding: 1rem; }
+  padding: 1rem;
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  align-items: center; }
   .home-images img {
     z-index: -100;
-    display: block;
-    position: relative;
-    max-width: 100%; }
+    position: absolute;
+    height: auto; }
+
+.home-title {
+  font-size: 8vw;
+  line-height: .8;
+  flex-basis: 50%;
+  color: white;
+  text-align: center; }
+  .home-title span {
+    display: block; }
+
+.home-info {
+  flex-basis: 50%;
+  font-size: 1.1rem;
+  padding-left: 10%;
+  text-align: left; }
+  .home-info p {
+    margin-bottom: .5rem; }
+  .home-info span {
+    display: block; }
 
 .menu-items {
   display: grid;
   margin-bottom: 4rem; }
   @media (min-width: 45rem) {
     .menu-items {
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 3%; } }
+      grid-template-columns: 1fr 1fr; } }
 
 .menu-item {
-  padding: .5rem 0;
+  padding: .5rem;
   font-size: 1.2rem;
-  border-bottom: 1px solid rgba(42, 40, 45, 0.4);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -76,7 +98,7 @@ body {
   font-weight: 100; }
 
 a {
-  color: #2a282d;
+  color: #201e23;
   text-decoration: none;
   position: relative; }
   a:after {
@@ -86,6 +108,6 @@ a {
     position: absolute;
     left: 0;
     bottom: 2px;
-    background: rgba(42, 40, 45, 0.5); }
+    background: rgba(32, 30, 35, 0.5); }
 
 /*# sourceMappingURL=true */
