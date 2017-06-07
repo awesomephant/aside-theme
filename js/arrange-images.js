@@ -21,7 +21,7 @@ var spawnImages = function () {
         let imageUrl = imageUrls[i];
         let w = getRandomInt(45, 70);
         let imgEl = document.createElement('img');
-        imgEl.setAttribute('src', themeLink + '/assets/source/' + imageUrl)
+        imgEl.setAttribute('src', themeLink + '/assets/dist/' + imageUrl)
         imgEl.style.width = w + '%';
         imgEl.style.left = (getRandomInt(-1, 5) * gridSize) + '%';
         imgEl.style.top = (getRandomInt(-1, 4) * gridSize) + '%';
