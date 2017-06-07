@@ -6,6 +6,7 @@
     overflow: hidden;
     position: relative;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     img {
         z-index: -100;
@@ -15,9 +16,9 @@
 }
 
 .home-title {
-    font-size: 8vw;
+    font-size: 25vw;
     line-height: .8;
-    flex-basis: 50%;
+    flex-basis: 100%;
     color: white;
     text-align: center;
     span {
@@ -26,9 +27,9 @@
 }
 
 .home-info {
-    flex-basis: 50%;
+    flex-basis: 100%;
     font-size: 1.1rem;
-    padding-left: 10%;
+    padding-left: 5%;
     text-align: left;
     p {
         margin-bottom: .5rem;
