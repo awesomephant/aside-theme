@@ -10,7 +10,7 @@ function shuffle(a) {
 }
 
 const imageCount = 4;
-const gridSize = 10;
+const gridSize = 20;
 const imageUrls = ['SIP-4728.jpg', 'SIP-4731.jpg', 'SIP-4738.jpg', 'SIP-4740.jpg', 'SIP-4746.jpg', 'SIP-4814.jpg', 'SIP-4817.jpg', 'wall.jpg'];
 var imageContainer = document.getElementById('js-imageContainer');
 
