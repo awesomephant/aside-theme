@@ -9,25 +9,14 @@ function shuffle(a) {
     }
 }
 
-const imageCount = 4;
+const imageCount = 1;
 const gridSize = 20;
-const imageUrls = ['SIP-4728.jpg', 'SIP-4731.jpg', 'SIP-4738.jpg', 'SIP-4740.jpg', 'SIP-4746.jpg', 'SIP-4814.jpg', 'SIP-4817.jpg', 'wall.jpg'];
+const imageUrls = ['SIP-4728.jpg', 'marble.jpg', 'h.jpg', 'SIP-4731.jpg', 'SIP-4738.jpg', 'SIP-4740.jpg', 'SIP-4746.jpg', 'SIP-4814.jpg', 'SIP-4817.jpg'];
 var imageContainer = document.getElementById('js-imageContainer');
 
-var spawnImages = function () {
-    shuffle(imageUrls);
-    for (var i = 0; i < imageCount; i++) {
-        imageUrls[imageCount - 1] = 'green.jpg';
-        let imageUrl = imageUrls[i];
-        let w = getRandomInt(45, 70);
-        let imgEl = document.createElement('img');
-        imgEl.setAttribute('src', themeLink + '/assets/dist/' + imageUrl)
-        imgEl.style.width = w + '%';
-        imgEl.style.left = (getRandomInt(-1, 5) * gridSize) + '%';
-        imgEl.style.top = (getRandomInt(-1, 4) * gridSize) + '%';
-
-        imageContainer.appendChild(imgEl)
-    }
+var setBackground = function () {
+    console.log(imageContainer)
+    let src = themeLink + '/assets/dist/' + imageUrls[getRandomInt(0, imageUrls.length - 1)];
+    imageContainer.style.backgroundImage = 'url(' + src + ')';
 }
-
-spawnImages()
+setBackground()
