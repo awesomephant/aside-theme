@@ -1,11 +1,17 @@
 .home-background {
     position: absolute;
-    left: 3vw;
-    right: 3vw;
-    top: 3vw;
+    left: 1rem;
+    right: 1rem;
+    top: 1rem;
     height: 40vh;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
     z-index: -100;
+
+    @include bp(m){
+        height: 80vh;
+    }
 }
 
 .home-title {
@@ -17,6 +23,10 @@
     text-align: center;
     span {
         display: block;
+    }
+    @include bp(m){
+        padding-top: 25vh;
+        font-size: 18vw;
     }
 }
 
