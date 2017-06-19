@@ -1,7 +1,6 @@
 {% extends "base.twig" %}
 {% block content %}
-{% set images = ['SIP-4728.jpg', 'marble.jpg', 'h.jpg', 'SIP-4731.jpg', 'SIP-4738.jpg', 'SIP-4740.jpg', 'SIP-4746.jpg', 'SIP-4814.jpg', 'SIP-4817.jpg']%}
-    <div class="home-background" id='js-imageContainer' style='background-image: url({{ theme.link }}/assets/dist/{{random(images)}})'>
+    <div class="home-background" id='js-imageContainer'>
     </div>
       <h1 class='home-title'>
       <span>Aside</span>
@@ -18,5 +17,6 @@
         </p>
     </div>
     <script>
+    {% include "./js/arrange-images.js" %}
     </script>
 {% endblock %}
