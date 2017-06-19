@@ -38,42 +38,71 @@ body {
   flex-basis: 100%;
   display: block; }
 
-.home-background {
-  position: absolute;
-  left: 1rem;
-  right: 1rem;
-  top: 1rem;
+.home-hero {
   height: 40vh;
   background-repeat: no-repeat;
-  background-position: top center;
-  background-size: contain;
-  z-index: -100; }
+  background-position: top 1rem center;
+  background-size: 90%;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media (min-width: 35rem) {
+    .home-hero {
+      background-size: contain;
+      height: 60vh; } }
   @media (min-width: 45rem) {
-    .home-background {
+    .home-hero {
+      margin-bottom: 3rem;
+      margin-top: 2rem;
       height: 80vh; } }
 
 .home-title {
   font-size: 25vw;
-  line-height: .8;
-  padding-top: 35vh;
-  flex-basis: 100%;
+  padding-left: 5%;
   color: white;
   text-align: center; }
-  .home-title span {
-    display: block; }
   @media (min-width: 45rem) {
     .home-title {
-      padding-top: 25vh;
       font-size: 18vw; } }
 
 .home-info {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   padding-left: 5%;
   text-align: left;
-  position: absolute;
-  bottom: 5%; }
+  padding-bottom: 2rem; }
+  @media (min-width: 45rem) {
+    .home-info {
+      font-size: 1.3rem; } }
+  @media (min-width: 65rem) {
+    .home-info {
+      font-size: 1.4rem; } }
+  .home-info section {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    padding-right: 1rem; }
+    @media (min-width: 45rem) {
+      .home-info section {
+        padding-left: 3rem; } }
+  .home-info em {
+    font-style: normal;
+    white-space: nowrap; }
   .home-info p {
-    margin-top: .5rem; }
+    max-width: 30em;
+    line-height: 1.35;
+    margin-bottom: 1rem; }
+  .home-info h2 {
+    transform: rotate(90deg);
+    transform-origin: left bottom;
+    position: absolute;
+    display: inline;
+    left: 0;
+    top: -1em;
+    font-size: 80%; }
+    @media (min-width: 45rem) {
+      .home-info h2 {
+        font-size: 100%; } }
   .home-info span {
     display: block; }
 
@@ -95,6 +124,36 @@ body {
 
 .menu-item-description {
   flex-basis: 100%; }
+
+#fancybox-wrap {
+  width: 90% !important;
+  top: 1rem !important;
+  position: fixed !important;
+  padding: 0 !important;
+  left: 5% !important; }
+
+#fancybox-close {
+  top: 0 !important;
+  right: 2px !important;
+  border: 0 !important;
+  background-image: url(./assets/icons/close.svg) !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important; }
+  #fancybox-close:after {
+    display: none !important; }
+
+#fancybox-outer {
+  background: white !important;
+  height: 90vh !important;
+  padding: 0 !important; }
+
+#fancybox-inner {
+  width: 90% !important; }
+  #fancybox-inner iframe {
+    width: 100% !important; }
+
+.fancy-bg, #fancybox-overlay {
+  display: none !important; }
 
 * {
   padding: 0;

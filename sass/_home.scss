@@ -1,43 +1,74 @@
-.home-background {
-    position: absolute;
-    left: 1rem;
-    right: 1rem;
-    top: 1rem;
+.home-hero {
     height: 40vh;
     background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
-    z-index: -100;
-
+    background-position: top 1rem center;
+    background-size: 90%;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include bp(s){
+       background-size: contain;
+       height: 60vh;
+    }
     @include bp(m){
-        height: 80vh;
+       margin-bottom: 3rem;
+       margin-top: 2rem;
+       height: 80vh;
     }
 }
 
 .home-title {
     font-size: 25vw;
-    line-height: .8;
-    padding-top: 35vh;
-    flex-basis: 100%;
+    padding-left: 5%;
     color: white;
     text-align: center;
-    span {
-        display: block;
-    }
     @include bp(m){
-        padding-top: 25vh;
         font-size: 18vw;
     }
 }
 
 .home-info {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+    @include bp(m){
+        font-size: 1.3rem;
+    }
+    @include bp(l){
+        font-size: 1.4rem;
+    }
     padding-left: 5%;
     text-align: left;
-    position: absolute;
-    bottom: 5%;
+    padding-bottom: 2rem;
+    section {
+        position: relative;
+        padding-left: 2rem;
+        margin-bottom: 1rem;
+        padding-right: 1rem;
+        @include bp(m){
+            padding-left: 3rem;
+        }
+    }
+
+    em {
+        font-style: normal;
+        white-space: nowrap;
+    }
     p {
-        margin-top: .5rem;
+        max-width: 30em;
+        line-height: 1.35;
+        margin-bottom: 1rem;
+    }
+    h2 {
+        transform: rotate(90deg);
+        transform-origin: left bottom;
+        position: absolute;
+        display: inline;
+        left: 0;
+        top: -1em;
+        font-size: 80%;
+        @include bp(m){
+            font-size: 100%;
+        }
     }
     span {
         display: block;
