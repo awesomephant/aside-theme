@@ -3,7 +3,7 @@
   src: url("./fonts/larish_neue.otf") format("opentype"); }
 
 body {
-  background: #D7DBE0;
+  background: whitesmoke;
   font-family: Larish, Georgia, "Times New Roman", serif; }
 
 .site-header {
