@@ -44,9 +44,6 @@ body {
   background-position: center;
   background-size: contain;
   margin-bottom: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-clip: padding-box;
   border: 1rem solid #e7e7e7;
   position: relative; }
@@ -62,16 +59,16 @@ body {
   font-size: 25vw;
   color: white;
   text-align: center;
-  position: absolute;
+  position: relative;
   width: 100%;
-  bottom: -.5em;
-  left: 0; }
-  @media (min-width: 35rem) {
-    .home-title {
-      position: static; } }
+  top: 50%;
+  transform: translateY(-50%); }
   @media (min-width: 45rem) {
     .home-title {
       font-size: 18vw; } }
+  @media (min-width: 45rem) {
+    .home-title {
+      font-size: 12vw; } }
 
 .home-info {
   font-size: 1.05rem;
