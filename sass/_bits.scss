@@ -6,6 +6,7 @@
 $larish: Larish, Georgia, 'Times New Roman', serif;
 $pink: #FFD4CC;
 $black: rgb(32,30,35);
+$lightgray: rgb(231,231,231);
 
 @mixin bp($point) {
   @if $point == l {

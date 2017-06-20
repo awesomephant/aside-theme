@@ -1,28 +1,33 @@
 .home-hero {
     height: 40vh;
     background-repeat: no-repeat;
-    background-position: top 1rem center;
-    background-size: 90%;
-    margin-bottom: 1rem;
+    background-position: center;
+    background-size: contain;
+    margin-bottom: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-clip: padding-box;
+    border: 1rem solid $lightgray;
+    position: relative;
     @include bp(s){
-       background-size: contain;
        height: 60vh;
     }
     @include bp(m){
        margin-bottom: 3rem;
-       margin-top: 2rem;
        height: 80vh;
     }
 }
 
 .home-title {
     font-size: 25vw;
-    padding-left: 5%;
     color: white;
     text-align: center;
+    position: absolute;
+    bottom: -.5em;
+    @include bp(s){
+        position: static;
+    }
     @include bp(m){
         font-size: 18vw;
     }
