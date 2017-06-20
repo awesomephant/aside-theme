@@ -11,7 +11,7 @@ function shuffle(a) {
 
 const imageCount = 1;
 const gridSize = 20;
-const imageUrls = ['SIP-4728.jpg', 'marble.jpg', 'h.jpg', 'SIP-4731.jpg', 'SIP-4738.jpg', 'SIP-4740.jpg', 'SIP-4746.jpg', 'SIP-4814.jpg', 'SIP-4817.jpg'];
+const imageUrls = ['SIP-4728.jpg', 'marble.jpg', 'SIP-4731.jpg', 'SIP-4738.jpg', 'SIP-4740.jpg', 'SIP-4746.jpg', 'SIP-4814.jpg', 'SIP-4817.jpg'];
 var imageContainer = document.getElementById('js-imageContainer');
 
 var setBackground = function () {
