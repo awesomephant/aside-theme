@@ -4,6 +4,9 @@
     background-position: center;
     background-size: contain;
     margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-clip: padding-box;
     border: 1rem solid $lightgray;
     position: relative;
@@ -20,15 +23,13 @@
     font-size: 25vw;
     color: white;
     text-align: center;
-    position: relative;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    @include bp(m){
-        font-size: 18vw;
+    position: absolute;
+    bottom: -.5em;
+    @include bp(s){
+        position: static;
     }
     @include bp(m){
-        font-size: 12vw;
+        font-size: 18vw;
     }
 }
 
