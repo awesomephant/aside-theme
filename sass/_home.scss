@@ -23,11 +23,8 @@
     font-size: 25vw;
     color: white;
     text-align: center;
-    position: absolute;
-    bottom: -.5em;
-    @include bp(s){
-        position: static;
-    }
+    width: 100%;
+    position: static;
     @include bp(m){
         font-size: 18vw;
     }

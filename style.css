@@ -62,11 +62,8 @@ body {
   font-size: 25vw;
   color: white;
   text-align: center;
-  position: absolute;
-  bottom: -.5em; }
-  @media (min-width: 35rem) {
-    .home-title {
-      position: static; } }
+  width: 100%;
+  position: static; }
   @media (min-width: 45rem) {
     .home-title {
       font-size: 18vw; } }
