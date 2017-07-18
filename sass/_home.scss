@@ -55,11 +55,6 @@
         font-style: normal;
         white-space: nowrap;
     }
-    p {
-        max-width: 30em;
-        line-height: 1.35;
-        margin-bottom: 1rem;
-    }
     h2 {
         transform: rotate(90deg);
         transform-origin: left bottom;
@@ -74,5 +69,17 @@
     }
     span {
         display: block;
+    }
+}
+
+.home-section-content {
+    max-width: 30em;
+    line-height: 1.35;
+    margin-bottom: 1rem;
+    ul {
+        margin-bottom: 1rem;
+    }
+    li {
+        list-style: none;
     }
 }

@@ -90,10 +90,6 @@ body {
   .home-info em {
     font-style: normal;
     white-space: nowrap; }
-  .home-info p {
-    max-width: 30em;
-    line-height: 1.35;
-    margin-bottom: 1rem; }
   .home-info h2 {
     transform: rotate(90deg);
     transform-origin: left bottom;
@@ -107,6 +103,15 @@ body {
         font-size: 100%; } }
   .home-info span {
     display: block; }
+
+.home-section-content {
+  max-width: 30em;
+  line-height: 1.35;
+  margin-bottom: 1rem; }
+  .home-section-content ul {
+    margin-bottom: 1rem; }
+  .home-section-content li {
+    list-style: none; }
 
 .menu-items {
   display: grid;

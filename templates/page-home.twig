@@ -5,34 +5,13 @@
     <div class="home-hero" id='js-imageContainer'>
       <h1 class='home-title'>Aside</h1>
     </div>
-      <div class='home-info'>
-      <section>
-<h2>Opening Times</h2>
-<p>
-<span>Wednesday—Friday: 10.00—23.00</span>
-<span>Saturday: 09.00—23.00</span>
-<span>Sunday: 09.00—18.00</span>
-<span>Please note the kitchen closes from 15.00—18.00 every day.</span> 
-</p>
-
-<p>To make your reservation, please either do so below, call us on <em>0207 358 1760</em> or email <a href="mailto:bookings@asidelondon.com">bookings@asidelondon.com</a></p>
-
-<a href="https://www.simpleerb.com/8724/aside/" class="serbwidget" target="_blank" >Book a Table</a>
-</section>
-<section>
-<h2>Contact</h2>
-<p>
-<span>Aside</span>
-<span>56 Goldsmith Road</span>
-<span>London SE15 5TN</span>
-<span><a href="https://www.google.co.uk/maps/place/56+Goldsmith+Rd,+London+SE15+5TF/@51.4761319,-0.0670891,15.91z/data=!4m5!3m4!1s0x4876030bccb132c3:0xb4bc900fbbc0221c!8m2!3d51.4755717!4d-0.0657666">View Map</a>
-</p>
-<p>
-<a href="mailto:hello@asidelondon.com">hello@asidelondon.com</a></span>
-<span>0207 358 1760</span>
-</p>
-</section>
-
+        <div class='home-info'>
+      {% for section in post.get_field('home_sections')%}
+            <section>
+                <h2>{{section.title}}</h2>
+                <div class="home-section-content">{{section.content}}</div>
+            </section>
+      {% endfor %}
     </div>
     <script>
     {% include "./js/arrange-images.js" %}
